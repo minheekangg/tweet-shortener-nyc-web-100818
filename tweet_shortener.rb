@@ -12,7 +12,7 @@ def word_substituter(string)
     "at"=> "@",
     "and"=> "&"
   }
-  array = string.split(" ").to_a
+  array = string.split(" ")
   new_array = []
     array.each do |word|
       if dictionary.has_key?(word)
