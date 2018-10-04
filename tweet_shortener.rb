@@ -42,9 +42,8 @@ tweets.each do |string|
   array = string.split(" ").to_a
   new_array = []
     array.each do |word|
-      word = word.downcase
-      if dictionary.has_key?(word)
-        new_array << dictionary.fetch(word)
+      if dictionary.has_key?(word.downcase)
+        new_array << dictionary.fetch(word.downcase)
       else
         new_array << word
       end
