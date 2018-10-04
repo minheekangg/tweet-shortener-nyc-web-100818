@@ -39,7 +39,7 @@ def bulk_tweet_shortener(tweets)
   }
 tweets.each do |string|
   new_tweets = ""
-  array = string.split(" ").to_a
+  array = string.split(" ")
   new_array = []
     array.each do |word|
       if dictionary.has_key?(word.downcase)
