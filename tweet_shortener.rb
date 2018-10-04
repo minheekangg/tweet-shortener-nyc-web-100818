@@ -47,6 +47,6 @@ tweets.each do |string|
         new_array << word
       end
     end
-puts new_array.join(" ")
+return new_array.join(" ")
 end
 end
