@@ -49,6 +49,6 @@ tweets.each do |string|
       end
     end
     new_tweets << new_array.join(" ")
-puts new_tweets
+puts new_tweets.flatten
 end
 end
