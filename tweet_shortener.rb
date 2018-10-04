@@ -52,3 +52,40 @@ tweets.each do |string|
 puts new_tweets
 end
 end
+
+
+def selective_tweet_shortener(tweets)
+    dictionary = {
+      "hello"=> "hi",
+      "two"=> 2,
+      "to"=> 2,
+      "too"=> 2,
+      "for"=> 4,
+      "four"=> 4,
+      "be"=> "b",
+      "you"=> "u",
+      "at"=> "@",
+      "and"=> "&"
+    }
+
+if tweets.length > 140
+  tweets.each do |string|
+    new_tweets = ""
+    array = string.split(" ").to_a
+    new_array = []
+      array.each do |word|
+        if dictionary.has_key?(word.downcase)
+          new_array << dictionary.fetch(word.downcase)
+        else
+          new_array << word
+        end
+      end
+      new_tweets << new_array.join(" ")
+  return new_tweets
+  end
+
+else 
+  return tweets
+
+end
+  
