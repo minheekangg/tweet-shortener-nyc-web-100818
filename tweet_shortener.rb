@@ -73,13 +73,14 @@ if tweets.length > 140
     new_tweets = ""
     array = string.split(" ").to_a
     new_array = []
-      array.each do |word|
-          if dictionary.has_key?(word.downcase)
-            new_array << dictionary.fetch(word.downcase)
-          else
-            new_array << word
+          array.each do |word|
+              if dictionary.has_key?(word.downcase)
+                new_array << dictionary.fetch(word.downcase)
+              else
+                new_array << word
+              end
           end
-      end
+    end
     new_tweets << new_array.join(" ")
   return new_tweets
 else
