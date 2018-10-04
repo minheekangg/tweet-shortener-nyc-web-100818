@@ -76,5 +76,5 @@ if tweets.length > 140
 
 else
   return tweets
-  
+
 end
