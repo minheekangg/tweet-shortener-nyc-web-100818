@@ -47,8 +47,8 @@ tweets.each do |string|
       else
         new_array << word
       end
-      new_tweets << new_array.join(" ")
     end
+    new_tweets << new_array.join(" ")
 puts new_tweets
 end
 end
