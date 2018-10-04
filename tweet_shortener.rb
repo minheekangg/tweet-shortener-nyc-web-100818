@@ -80,10 +80,10 @@ if tweets.length > 140
                 new_array << word
               end
           end
+        end
     new_tweets << new_array.join(" ")
   return new_tweets
 else
   return tweets
-end
 end
 end
