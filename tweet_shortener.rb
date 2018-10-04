@@ -69,10 +69,8 @@ def selective_tweet_shortener(tweets)
     }
 
 if tweets.length > 140
-
-    tweets.each do |string|
       new_tweets = ""
-      array = string.split(" ").to_a
+      array = tweets.split(" ")
       new_array = []
         array.each do |word|
           if dictionary.has_key?(word.downcase)
