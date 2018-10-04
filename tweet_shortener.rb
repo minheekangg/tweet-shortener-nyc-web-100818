@@ -92,6 +92,7 @@ def shortened_tweet_truncator(tweet)
 if tweet.length > 140
   truncated_tweet = selective_tweet_shortener(tweet)
     if truncated_tweet > 140
+      puts truncated_tweet
       shortened_tweet = truncated_tweet[141..-1].delete
       return shortened_tweet
     else
