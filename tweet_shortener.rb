@@ -40,7 +40,7 @@ def bulk_tweet_shortener(tweets)
 tweets.each do |string|
   new_tweets = []
   array = string.split(" ").to_a
-  new_array = []
+  new_array = ""
     array.each do |word|
       if dictionary.has_key?(word)
         new_array << dictionary.fetch(word)
@@ -49,6 +49,6 @@ tweets.each do |string|
       end
     end
     new_tweets << new_array.join(" ")
-puts new_tweets.flatten
+puts new_tweets
 end
 end
