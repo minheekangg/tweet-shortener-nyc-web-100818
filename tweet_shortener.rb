@@ -49,6 +49,6 @@ tweets.each do |string|
       end
       new_tweets << new_array.join(" ")
     end
-puts new_tweets.join(" ")
+puts new_tweets
 end
 end
