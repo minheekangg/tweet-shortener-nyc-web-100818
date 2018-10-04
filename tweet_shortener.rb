@@ -84,8 +84,7 @@ if tweets.length > 140
   return new_tweets
   end
 
-else 
+else
   return tweets
 
 end
-  
